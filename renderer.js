@@ -26,6 +26,14 @@ testButton.addEventListener('click', function () {
     .then(function (data) {
         console.log(data);
         //document.getElementById('travisReply').innerHTML = ('Hello ' + data.name);
+        let newNotification = new window.Notification('Test', {
+            body: 'Look at my new notification!'
+        });
+
+        newNotification.onClick = () => {
+            console.log('notification clicked!');
+        };
+
         document.getElementById('buildStatus').innerHTML = 'Build number: ' + data.builds[0].number + ' Branch name: ' + data.builds[0].branch.name + ' Status: ' + data.builds[0].state;
     });
 });

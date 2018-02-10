@@ -12,6 +12,8 @@ const mb = menubar({
     height: 600
 });
 
+mb.app.setAppUserModelId('pizzashop.travisCi.buildWatcher.0.0.0.1');
+
 mb.on('ready', function ready() {
     console.log('app is ready');
 });
