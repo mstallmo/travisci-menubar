@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>TravisCi Test!</title>
+  </head>
+  <body>
+    <h1 id="travisReply">TravisCi Test!</h1>
+    <br />
+    <h3 id="buildStatus"></h3>
+    <br />
+    <div>
+        <button id="testButton">Get Builds!</button>
+    </div>
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+  </body>
+</html>
